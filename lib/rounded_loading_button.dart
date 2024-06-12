@@ -22,7 +22,7 @@ class RoundedLoadingButton extends StatefulWidget {
   final Widget child;
 
   /// The primary color of the button
-  final Color? color;
+  final Color color;
 
   /// The vertical extent of the button.
   final double height;
