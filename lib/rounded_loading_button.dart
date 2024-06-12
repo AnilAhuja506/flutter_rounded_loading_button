@@ -92,7 +92,7 @@ class RoundedLoadingButton extends StatefulWidget {
     required this.controller,
     required this.onPressed,
     required this.child,
-    this.color = Colors.lightBlue,
+    required this.color,
     this.height = 50,
     this.width = 300,
     this.loaderSize = 24.0,
