@@ -22,7 +22,7 @@ class RoundedLoadingButton extends StatefulWidget {
   final Widget child;
 
   /// The primary color of the button
-  final Color color;
+  final Color? color;
 
   /// The vertical extent of the button.
   final double height;
@@ -92,7 +92,7 @@ class RoundedLoadingButton extends StatefulWidget {
     required this.controller,
     required this.onPressed,
     required this.child,
-    required this.color,
+    this.color = Colors.lightBlue,
     this.height = 50,
     this.width = 300,
     this.loaderSize = 24.0,
@@ -200,9 +200,7 @@ class RoundedLoadingButtonState extends State<RoundedLoadingButton>
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(widget.borderRadius),
           ),
-          backgroundColor: WidgetStateProperty.all<Color>(
-             widget.color,
-          ),
+          backgroundColor: widget.color,
           // primary: widget.color,
           elevation: widget.elevation,
           padding: const EdgeInsets.all(0),
